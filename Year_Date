@@ -1,0 +1,7 @@
+format(
+  floor(dateBetween(now(), prop("Date"), "days") / 365)
+) + " years " +
+format(
+  mod(dateBetween(now(), prop("Date"), "days"), 365)
+) + " days"
+
